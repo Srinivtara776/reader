@@ -1,0 +1,30 @@
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>price</th>
+            <th>author</th>
+            <th>publisher</th>
+            <th>publisher_date</th>
+            <th>content</th>
+            <th>active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.category}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.publisher}}</td> 
+            <td>{{book.publisher_date}}</td>
+            <td>{{book.content}}</td>
+            <td>{{book.active}}</td>
+            
+        </tr>
+    </tbody>
+</table>
