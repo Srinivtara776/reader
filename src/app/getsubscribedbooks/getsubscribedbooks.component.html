@@ -1,0 +1,44 @@
+<form (ngSubmit)="getsubscribedbooks()">
+    <div style="text-align: center">
+        <br><br><label for="readerEmail">Email:</label>
+        <input type="text" name="readerEmail" [(ngModel)]="readerEmail">
+        <br><br><button type="subscribe" class="btn btn-primary">getsubscribeddetails</button>
+    </div>
+
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>price</th>
+                <th>author</th>
+                <th>publisher</th>
+                <th>publisher_date</th>
+                <th>content</th>
+                <th>active</th>
+                <th>action</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of subscribedbook">
+                <td>{{book.book_id}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.category}}</td>
+                <td>{{book.price}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.publisher}}</td>
+                <td>{{book.publisher_date}}</td>
+                <td>{{book.content}}</td>
+                <td>{{book.active}}</td>
+                <td>
+                    <button (click)="unsubscribeBook(book.book_id)">unsubscribe</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</form>

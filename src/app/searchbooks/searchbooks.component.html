@@ -1,15 +1,16 @@
 <div>
-    <div class="list row">
+    <div style="margin:auto; width: 70%; margin-top: 30px;" class="list row">
         <div class="col-md-8">
             <div class="input-group mb-3">
-                <h4>title:</h4><br>
+                   
                 <input #title
                 type="text"
                 class="form-control"
                 placeholder="Search by title"
                 />
                 <div class="input-group-append">
-                    <button
+                    <button 
+                   
                     class="btn btn-outline-secondary"
                     type="button"
                     (click)="getBooksByTitle(title.value)">
@@ -25,15 +26,15 @@
                 </div>
 
                 <div>
-                    <div class="list row">
-                        <div class="col-md-8">
+                    <div  class="list row">
+                        <div class="col-md-14 margin-50-bottom">
                             <div class="input-group mb-3">
-                                <h4>price:</h4><br>
+                                
                                 <input #price
                                 type="text"
                                 class="form-control"
                                 placeholder="Search by price"
-                                />
+                                >
                                 <div class="input-group-append">
                                     <button
                                     class="btn btn-outline-secondary"
@@ -43,17 +44,17 @@
                                     Search
                                 </button>
                                 </div>
-                                </div>>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <p>{{bookpricedata | json}}
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="list row">
-                                        <div class="col-md-8">
+                                    <div  class="list row">
+                                        <div class="col-md-18">
                                             <div class="input-group mb-3">
-                                                <h4>category:</h4><br>
+                                                
                                                 <input #category
                                                 type="text"
                                                 class="form-control"
@@ -65,10 +66,10 @@
                                                     type="button"
                                                     (click)="getBooksByCategory(category.value)">
                                                     
-                                                    Search
+                                               Search
                                                 </button>
                                                 </div>
-                                                </div>>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-md-7">
                                                         <p>{{bookcategorydata | json}}
@@ -76,9 +77,9 @@
                                                 </div>
                                                 <div>
                                                     <div class="list row">
-                                                        <div class="col-md-8">
+                                                        <div class="col-md-18">
                                                             <div class="input-group mb-3">
-                                                                <h4>author:</h4><br>
+                                                               
                                                                 <input #author
                                                                 type="text"
                                                                 class="form-control"
@@ -93,7 +94,7 @@
                                                                     Search
                                                                 </button>
                                                                 </div>
-                                                                </div>>
+                                                                </div>
                                                                 <div>
                                                                     <div class="row">
                                                                         <div class="col-md-8">
@@ -101,28 +102,27 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="list row">
-                                                                        <div class="col-md-8">
+                                                                        <div class="col-md-18">
                                                                             <div class="input-group mb-3">
-                                                                                <h4>publisher:</h4><br>
+                                                                               
                                                                                 <input #publisher
                                                                                 type="text"
                                                                                 class="form-control"
-                                                                                placeholder="Search by publisher"
-                                                                                />
+                                                                                placeholder="Search by publisher">
+                                                                                
                                                                                 <div class="input-group-append">
                                                                                     <button
                                                                                     class="btn btn-outline-secondary"
                                                                                     type="button"
                                                                                     (click)="getBooksByPublisher(publisher.value)">
-                                                                                    
                                                                                     Search
                                                                                 </button>
                                                                                 </div>
-                                                                                </div>>
+                                                                                </div>
                                                                                 <div class="row">
                                                                                     <div class="col-md-7">
                                                                                         <p>{{bookpublisherdata | json}}
                                                                                     </div>
                                                                                 </div>
                                                                                                            
-           
+                                                                                  

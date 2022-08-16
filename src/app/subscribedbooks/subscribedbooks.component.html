@@ -1,0 +1,20 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center">
+        <form (ngSubmit)="subscribedbooks()">
+    <div>
+        <br><br><label for="readerName">Name:</label>
+        <input type="text" name="readerName" [(ngModel)]="data.readerName">
+    </div>
+    <div>
+        <br><label for="readerEmail">Email:</label>
+        <input type="text" name="readerEmail" [(ngModel)]="data.readerEmail">
+    </div>
+    <div>
+        <br><label for="book_id">Book id:</label>
+        <input type="text" name="book_id" [(ngModel)]="data.book_id">
+    </div>
+     <br><!--<button type="subscribe" class="btn btn-primary">subscribe</button> -->
+    <button color="primary"(click)="subscribedbooks()">subscribe</button>
+    <button class="btn btn-secondary" routerLink="/getsubscribedbooks" mat-raised-button color="primary">getsubscribedbooks</button><br>
+</form>

@@ -1,0 +1,43 @@
+<form (ngSubmit)="createBook()">
+    <div style="text-align: center">
+        
+    </div>
+    <div class="form-group">
+        <div class="col-md-8"></div>
+        <label for="author"author>author</label>
+        <input type="text" name="author" class="form-control"[(ngModel)]="data.author">
+    </div>
+    <div class="form-group">
+        <label for="author"category>category</label>
+        <input type="text" name="category" class="form-control"[(ngModel)]="data.category">
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" name="price" class="form-control"[(ngModel)]="data.price">
+    </div>
+    <div class="form-group">
+        <label for="publisher">publisher</label>
+        <input type="text" name="publisher" class="form-control"[(ngModel)]="data.publisher">
+    </div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control"[(ngModel)]="data.title">
+    </div>
+    <div class="form-group">
+        <label for="content">Content</label>
+        <input type="text" name="content" class="form-control"[(ngModel)]="data.content">
+    </div>
+    <div class="form-group">
+        <label for="publisher_date">publisher_date</label>
+        <input type="text" name="publisher_date" class="form-control"[(ngModel)]="data.publisher_date">
+    </div>
+    <div class="form-group">
+        <label for="content"active>Active</label>
+        <input type="text" name="active" class="form-control"[(ngModel)]="data.active">
+        
+        
+    
+    
+    </div>
+    <button type="createbook" (click)="createBook()" class="btn btn-primary">CreateBook</button>
+</form>

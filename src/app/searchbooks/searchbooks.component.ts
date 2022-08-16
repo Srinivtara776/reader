@@ -15,6 +15,8 @@ export class SearchbooksComponent implements OnInit {
   bookauthordata:any;
   bookpublisherdata:any;
 
+  
+
   constructor(private bookService:BookService) { }
 
   ngOnInit(): void {
@@ -72,7 +74,7 @@ export class SearchbooksComponent implements OnInit {
     })
   }
   getBooksByAuthor(author:string){
-    this.bookService.getBooksByPublisher(author).subscribe({
+    this.bookService.getBooksByAuthor(author).subscribe({
       next: (res:any)=>{
         console.log("books data is successfully fetched based on author")
         console.log(res);

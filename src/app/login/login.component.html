@@ -1,0 +1,43 @@
+  <h3>Login Form</h3>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center">
+        <form (ngSubmit)="getToken()">
+
+          <div>
+            <label for="txtusername" class="form-label">Email id:</label>
+            <input type="email" id="txtusername" name="username" aria-describedby="emailHelp"
+              [(ngModel)]="loginData.username">
+
+          </div>
+          <div>
+            <label for="txtpassword" class="form-label">Password:</label>
+            <input type="password"  id="txtpassword" name="password"
+            [(ngModel)]="loginData.password">
+          </div>
+
+          <button type="submit" (click)="userLogin()" class="btn btn-primary">Login</button>
+        </form>
+
+      </td>
+    </tr>
+  </table>
+
+
+
+  <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+    <tr>
+      <td align="center">
+        <form (ngSubmit)="getToken()">
+          <div>
+            <label for="txtusername" class="form-label">Email address</label>
+            <input type="email" size="50" id="txtusername" name="username" [(ngModel)]="loginData.username">
+          </div>
+          <label for="txtpassword" class="form-label">Password</label>
+          <input type="password" id="txtpassword" name="password" size="50" [(ngModel)]="loginData.password">
+          <button type="submit" (click)="userLogin()" class="btn btn-primary">Login</button>
+        </form>
+
+      </td>
+    </tr>
+  </table> -->
